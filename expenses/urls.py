@@ -26,4 +26,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("receipts/", include("receipts.urls")),
     path("", redirect_home),
+    path("accounts/", include("accounts.urls")),
 ]
