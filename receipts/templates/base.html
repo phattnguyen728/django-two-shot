@@ -10,14 +10,18 @@
   <header>
     <nav>
       <ul>
-
           {% if user.is_authenticated %}
-            <li><a href="{% url 'logout' %}">Logout</a></li>
+          <li><a href="{% url 'logout' %}">Logout</a></li>
+          <br>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'create_receipt' %}">Create_receipt</a></li>
+          <li><a href="{% url 'categories_list' %}">Categories_list</a></li>
+          <li><a href="{% url 'create_category' %}">Create_category</a></li>
+          <li><a href="{% url 'create_account' %}">Create_account</a></li>
           {% else %}
           <li><a href="{% url 'signup' %}">Sign Up</a></li>
           <li><a href="{% url 'login' %}">Login</a></li>
           {% endif %}
-
       </ul>
     </nav>
   </header>
